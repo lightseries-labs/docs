@@ -1,0 +1,43 @@
+export const DataBucket = {
+  name: "DataBucket",
+  fields: {
+    id: {
+      name: "id",
+      exampleValue: "123",
+      type: "ID",
+      requiredType: "ID!",
+      description: "The unique identifier of the data bucket.",
+    },
+    environmentId: {
+      name: "environmentId",
+      exampleValue: "1",
+      type: "ID",
+      requiredType: "ID!",
+      description:
+        "The unique identifier of the environment the data bucket belongs to.",
+    },
+    name: {
+      name: "name",
+      exampleValue: "My Data Bucket",
+      type: "String",
+      requiredType: "String!",
+      description: "The name of the data bucket.",
+    },
+    metadata: {
+      name: "metadata",
+      type: "JSONObject",
+      requiredType: "JSONObject!",
+      exampleValue: {
+        customerId: "customer-123",
+      },
+      description: "an object containing metadata for the data bucket.",
+    },
+    createdAt: {
+      name: "createdAt",
+      type: "String",
+      requiredType: "String!",
+      exampleValue: "1708857274370",
+      description: "The timestamp the data bucket was created.",
+    },
+  },
+};

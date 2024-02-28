@@ -1,0 +1,63 @@
+export const DataPoint = {
+  name: "DataPoint",
+  fields: {
+    id: {
+      name: "id",
+      exampleValue: "123",
+      type: "ID",
+      requiredType: "ID!",
+      description: "The unique identifier of the data point.",
+    },
+    environmentId: {
+      name: "environmentId",
+      exampleValue: "1",
+      type: "ID",
+      requiredType: "ID!",
+      description:
+        "The unique identifier of the environment the data point belongs to.",
+    },
+    dataBucketId: {
+      name: "dataBucketId",
+      exampleValue: "1",
+      type: "ID",
+      requiredType: "ID!",
+      description:
+        "The unique identifier of the data bucket the data point belongs to.",
+    },
+    dataTypeId: {
+      name: "dataTypeId",
+      exampleValue: "1",
+      type: "ID",
+      requiredType: "ID!",
+      description:
+        "The unique identifier of the data type the data point belongs to.",
+    },
+    attributes: {
+      name: "attributes",
+      type: "JSONObject",
+      requiredType: "JSONObject!",
+      exampleValue: {},
+      description:
+        "An object containing attributes for the data point. Attributes are a special type of metadata that are being used for indexing",
+    },
+    metadata: {
+      name: "metadata",
+      type: "JSONObject",
+      requiredType: "JSONObject!",
+      exampleValue: {},
+      description: "An object containing metadata for the data point. ",
+    },
+    value: {
+      name: "value",
+      exampleValue: "12.5",
+      type: "Float!",
+      description: "The value of the data point.",
+    },
+    timestamp: {
+      name: "timestamp",
+      type: "String!",
+      exampleValue: "1708857274370",
+      description: "The timestamp the data point was created.",
+    },
+  },
+};

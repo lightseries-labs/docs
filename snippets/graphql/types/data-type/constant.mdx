@@ -1,0 +1,51 @@
+export const DataType = {
+  name: "DataType",
+  fields: {
+    id: {
+      name: "id",
+      exampleValue: "123",
+      type: "ID!",
+      description: "The unique identifier of the data type.",
+    },
+    environmentId: {
+      name: "environmentId",
+      exampleValue: "1",
+      type: "ID!",
+      description:
+        "The unique identifier of the environment the data bucket belongs to.",
+    },
+    name: {
+      name: "name",
+      exampleValue: "Order duration",
+      type: "String!",
+      description: "The name of the data type.",
+    },
+    unit: {
+      name: "unit",
+      exampleValue: "minutes",
+      type: "String!",
+      description: "The unit of the data type.",
+    },
+    color: {
+      name: "color",
+      exampleValue: "#FF5733",
+      type: "String!",
+      description: "The color of the data type, used for visualization.",
+    },
+    metadata: {
+      name: "metadata",
+      type: "JSONObject!",
+      exampleValue: {
+        customerId: "customer-123",
+        orderId: "order-123",
+      },
+      description: "an object containing metadata for the data type.",
+    },
+    createdAt: {
+      name: "createdAt",
+      type: "String!",
+      exampleValue: "1708857274370",
+      description: "The timestamp the data type was created.",
+    },
+  },
+};

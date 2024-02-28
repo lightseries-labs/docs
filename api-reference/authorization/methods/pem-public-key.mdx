@@ -1,0 +1,23 @@
+---
+title: "Pem public key"
+description: "Pem public keys are an easy way to authenticate your end users using the same jwt token that you use to authenticate your API requests."
+---
+
+### When to use
+
+Wanna allow your end users to read/write data directly to Lightseries? You're in the right place.
+
+### How it works
+
+This is done by using a public key to verify the JWT token. The key is a PEM encoded RSA public key. You can save this public key into our dashboard and the api will use it to confirm that the user that is making the request is indeed using a token that was signed using your private key.
+
+<Frame caption="key id represents <your_public_key_id>">
+  <img src="/images/pem_public_key.png" />
+</Frame>
+
+### Required HTTP Headers
+
+```http
+x-authorization: <your_jwt_token>
+x-authorization-key-id: <your_public_key_id>
+```

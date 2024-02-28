@@ -1,0 +1,36 @@
+---
+title: "AggregationInput"
+description: "Start building awesome documentation in under 5 minutes"
+---
+
+export const AggregationMethod = {
+  name: "AggregationMethod",
+  type: "Enum",
+  description: "The method to apply to the data points.",
+  values: ["avg", "sum", "count", "min", "max"],
+};
+
+export const AggregationPeriod = {
+  name: "AggregationPeriod",
+  type: "Enum",
+  description: "The interval to aggregate the data points.",
+  values: ["hour", "day", "week", "month", "year"],
+};
+
+export const AggregationInput = {
+  name: "AggregationInput",
+  fields: {
+    method: {
+      name: "method",
+      type: "AggregationMethod!",
+      description: "The aggregation method to apply to the data points.",
+      exampleValue: "average",
+    },
+    period: {
+      name: "period",
+      type: "AggregationPeriod!",
+      description: "The interval to aggregate the data points.",
+      exampleValue: "hour",
+    },
+  },
+};

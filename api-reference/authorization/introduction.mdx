@@ -1,0 +1,12 @@
+---
+title: "Introduction"
+sidebarTitle: "Introduction"
+description: "Lightseries api requests are authenticated using HTTP headers. This guide will help you understand the required headers and how to use them."
+---
+
+There are currently two methods of authentication, both of which are based on the use of HTTP headers and serve different usecases.
+
+- **API Key**: simply copy the API key from the dashboard and use it as a header in your requests.
+- **PEM Public Key**: add your public key to the dashboard and send a signed JWT token as a header in your requests.
+
+We also provide a simple way of configuring more granular access control for both of these methods via the use of permissions.

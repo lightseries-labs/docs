@@ -1,91 +1,99 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Lightseries",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+    "dark": "#ffffff",
+    "light": "#ffffff",
+    "primary": "#ff5a5f",
+    "background": {
+      "dark": "#09090b"
     }
   },
+  "anchors": [
+    {
+      "icon": "discord",
+      "url": "https://discord.gg/66hhfVHVAj",
+      "name": "Discord",
+      "color": "#5865F2"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/lightseries-labs",
+      "name": "Github",
+      "color": "#000"
+    }
+  ],
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:hi@ligthseries.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.ligthseries.io"
+  },
+  "primaryTab": {
+    "name": "Documentation"
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "GraphQL API Reference",
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+  "api": {
+    "playground": {
+      "mode": "hide"
     }
-  ],
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Lightseries",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "documentation/getting-started",
+        {
+          "group": "Entities",
+          "pages": [
+            "documentation/entities/data-buckets",
+            "documentation/entities/data-types",
+            "documentation/entities/data-points"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Auth",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "api-reference/authorization/introduction",
+        {
+          "group": "Methods",
+          "pages": [
+            "api-reference/authorization/methods/api-key",
+            "api-reference/authorization/methods/pem-public-key"
+          ]
+        },
+        "api-reference/authorization/permissions"
       ]
     },
     {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Schema",
+      "pages": ["api-reference/schema/playground"]
     }
   ],
+
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "discord": "https://discord.gg/66hhfVHVAj",
+    "github": "https://github.com/ligthseries-labs",
+    "linkedin": "https://www.linkedin.com/company/ligthseries"
   }
 }
