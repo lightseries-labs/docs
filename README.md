@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="dark-logo-white-background.png" alt="Lightseries" title="Lightseries" width="170">
+  <img src="readme-logo.svg" alt="Lightseries" title="Lightseries" width="170">
     </br>
     <h1><b>Lightseries Docs</b></h1>
 </div>
