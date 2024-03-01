@@ -35,12 +35,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@ligthseries.io"
+      "url": "mailto:hi@lightseries.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.ligthseries.io"
+    "url": "https://dashboard.lightseries.io"
   },
   "primaryTab": {
     "name": "Documentation"
@@ -93,8 +93,8 @@
 
   "footerSocials": {
     "discord": "https://discord.gg/66hhfVHVAj",
-    "github": "https://github.com/ligthseries-labs",
-    "linkedin": "https://www.linkedin.com/company/ligthseries"
+    "github": "https://github.com/lightseries-labs",
+    "linkedin": "https://www.linkedin.com/company/lightseries"
   },
   "analytics": {
     "posthog": {
