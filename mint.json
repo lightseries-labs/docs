@@ -95,5 +95,11 @@
     "discord": "https://discord.gg/66hhfVHVAj",
     "github": "https://github.com/ligthseries-labs",
     "linkedin": "https://www.linkedin.com/company/ligthseries"
+  },
+  "analytics": {
+    "posthog": {
+      "apiKey": "phc_zcYSNDHFYRC5SSBoCXDm78Ax2sBTqrFYxlw5wYSEnLv",
+      "apiHost": "https://app.posthog.com"
+    }
   }
 }
